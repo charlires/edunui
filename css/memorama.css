@@ -1,0 +1,38 @@
+body {
+    background: #1998f0 url("../img/background.png");
+}
+
+.blk {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+}
+
+.card {
+    margin: 10px;
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    border: solid 1px #f00;
+    font: bold 3em verdana, arial, sans-serif;
+}
+
+.back {
+    background: #ccc;
+    cursor: pointer;
+}
+
+.cf1 {
+    background: #ff0;
+    color: #00f;
+}
+
+.cf2 {
+    background: #f9f;
+    color: #00f;
+}
+
+.cf3 {
+    background: #0cf;
+    color: #c00;
+}
