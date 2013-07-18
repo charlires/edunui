@@ -63,10 +63,12 @@ body {
 	height: 50%;
 }
 
+
+/* cuadros del index */
 .bl-main > section:first-child {
 	top: 0;
 	left: 0;
-	background: #F06060;
+	background: #1998f0;
 }
 
 .bl-main > section:nth-child(2) {
@@ -203,6 +205,14 @@ div.bl-panel-items > div > div {
 	font-size: 3em;
 	font-weight: 300;
 	margin: 0 0 20px 0;
+}
+
+/* titulo de los juegos */
+.bl-content h2.bl-juegos  {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    text-align: center;
 }
 
 .bl-content article {
@@ -376,8 +386,9 @@ div.bl-panel-items > div.bl-hide-current-work {
 	z-index: 100;
 }
 
+/* contenido de los cuadros */
 .bl-main > section:first-child.bl-expand {
-	background: #EE4444;
+	background: #1998F0;
 }
 .bl-main > section:nth-child(2).bl-expand {
 	background: #F98262;
