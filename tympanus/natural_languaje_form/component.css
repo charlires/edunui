@@ -131,7 +131,7 @@
 }
 
 .nl-dd ul li.nl-dd-checked:before {
-	content: "\e000";
+	/*content: "\e";*/
 	position: absolute;
 	right: 1em;
 	font-size: 50%;
