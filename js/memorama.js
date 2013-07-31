@@ -111,6 +111,7 @@
         bt.type = 'button';
         bt.id = 'cnt';
         bt.value = '0.00';
+        bt.className = "btn btn-large";
         bt.onclick = begin;
         f.appendChild(bt);
         d.appendChild(f);

@@ -37,11 +37,11 @@
 	height: 10px;
 	bottom: 0px;
 	/*background-image: url(../images/gradient.png);*/
-	background-image: -webkit-linear-gradient(top, #fff 50%, #e7ae38 50%);
-	background-image: -moz-linear-gradient(top, #fff 50%, #e7ae38 50%);
-	background-image: -o-linear-gradient(top, #fff 50%, #e7ae38 50%);
-	background-image: -ms-linear-gradient(top, #fff 50%, #e7ae38 50%);
-	background-image: linear-gradient(to bottom, #fff 50%, #e7ae38 50%);
+	background-image: -webkit-linear-gradient(top, #fff 50%, #E76938 50%);
+	background-image: -moz-linear-gradient(top, #fff 50%, #E76938 50%);
+	background-image: -o-linear-gradient(top, #fff 50%, #E76938 50%);
+	background-image: -ms-linear-gradient(top, #fff 50%, #E76938 50%);
+	background-image: linear-gradient(to bottom, #fff 50%, #E76938 50%);
 	-webkit-background-size: 5px 5px;
 	-moz-background-size: 5px 5px;
 	background-size: 5px 5px;

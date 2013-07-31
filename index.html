@@ -8,13 +8,22 @@
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
 
+
     <link rel="stylesheet" type="text/css" href="tympanus/layout_transitions/component.css"/>
 
-    <link rel="stylesheet" type="text/css" href="tympanus/circle_hover/demo.css"/>
-    <link rel="stylesheet" type="text/css" href="tympanus/circle_hover/common.css"/>
-    <link rel="stylesheet" type="text/css" href="tympanus/circle_hover/style2.css"/>
+    <link rel="stylesheet" type="text/css" href="tympanus/icon_hover_effect/component.css"/>
+    <link rel="stylesheet" type="text/css" href="tympanus/icon_hover_effect/default.css"/>
+
+    <!--<link rel="stylesheet" type="text/css" href="tympanus/circle_hover/demo.css"/>-->
+    <!--<link rel="stylesheet" type="text/css" href="tympanus/circle_hover/common.css"/>-->
+    <!--<link rel="stylesheet" type="text/css" href="tympanus/circle_hover/style2.css"/>-->
 
     <link rel="stylesheet" type="text/css" href="tympanus/stack_slider/style.css"/>
+
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css"/>
+
+
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
 
 </head>
 <body>
@@ -25,71 +34,28 @@
         <h2 class="bl-icon bl-icon-about">Juegos</h2>
     </div>
     <div class="bl-content">
-        <h2 class="bl-juegos">Selecciona el juego que quieres.</h2>
-        <section class="main-stack">
-            <ul class="ch-grid">
-                <li>
-                    <div class="ch-item ch-vitaminas">
-                        <div class="ch-info">
-                            <h3>Vitaminas</h3>
-
-                            <p><a href="memorama.html">JUGAR</a></p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="ch-item ch-minerales">
-                        <div class="ch-info">
-                            <h3>Minerales</h3>
-
-                            <p><a href="http://drbl.in/eNXW">JUGAR</a></p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="ch-item ch-img-3">
-                        <div class="ch-info">
-                            <h3>Cylon</h3>
-
-                            <p>by Daniel Nyari <a href="http://drbl.in/eNXY">View on Dribbble</a></p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </section>
-        <section class="main-stack">
-            <ul class="ch-grid">
-                <li>
-                    <div class="ch-item ch-img-1">
-                        <div class="ch-info">
-                            <h3>Brainiac</h3>
-
-                            <p>by Daniel Nyari <a href="http://drbl.in/eODP">View on Dribbble</a></p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="ch-item ch-img-2">
-                        <div class="ch-info">
-                            <h3>Vision</h3>
-
-                            <p>by Daniel Nyari <a href="http://drbl.in/eNXW">View on Dribbble</a></p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="ch-item ch-img-3">
-                        <div class="ch-info">
-                            <h3>Cylon</h3>
-
-                            <p>by Daniel Nyari <a href="http://drbl.in/eNXY">View on Dribbble</a></p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+        <h2 class="bl-juegos">Selecciona un juego.</h2>
+        <section class="set-9">
+            <div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
+                <a href="memorama.html" class="hi-icon hi-icon-images">Vitaminas</a>
+                <a href="#set-9" class="hi-icon hi-icon-blank">Minerales <br>
+                    <i class="icon-circle-arrow-left icon-4x"></i>
+                </a>
+                <a href="#set-9" class="hi-icon hi-icon-blank">Plato del buen comer</a>
+                <a href="#set-9" class="hi-icon hi-icon-blank">Jarra del buen beber</a>
+                <!--<a href="#set-9" class="hi-icon hi-icon-location">Location</a>-->
+            </div>
+            <div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9b">
+                <a href="#set-9" class="hi-icon hi-icon-blank">Images</a>
+                <a href="#set-9" class="hi-icon hi-icon-blank">Edit</a>
+                <a href="#set-9" class="hi-icon hi-icon-blank">Link</a>
+                <!--<a href="#set-9" class="hi-icon hi-icon-mail">Mail</a>-->
+                <!--<a href="#set-9" class="hi-icon hi-icon-location">Location</a>-->
+            </div>
         </section>
     </div>
-    <span class="bl-icon bl-icon-close">X</span>
+    <!--<span class="bl-icon bl-icon-close">X</span>-->
+    <span class="bl-icon bl-icon-close icon-circle-arrow-left icon-2x"></span>
 </section>
 <section id="bl-work-section">
     <div class="bl-box">
@@ -97,103 +63,105 @@
     </div>
     <div class="bl-content" style="overflow-y:hidden;">
         <h2>Recetas</h2>
+
         <div class="container-stack">
             <section class="main-stack">
 
                 <ul id="st-stack" class="st-stack-raw">
                     <li>
-                        <div class="st-item"><a href="http://drbl.in/fgQV"><img
+                        <div class="st-item" data-panel="panel1"><a href="#"><img
                                 src="img/recetas/1.jpg"/></a></div>
                         <div class="st-title"><h2>Graverobber</h2>
 
                             <h3></h3></div>
                     </li>
                     <li>
-                        <div class="st-item"><a href="http://drbl.in/fpRz"><img
+                        <div class="st-item"><a href="#"><img
                                 src="img/recetas/2.jpg"/></a></div>
                         <div class="st-title"><h2>Hideous Snake Queen</h2>
 
                             <h3></h3></div>
                     </li>
                     <li>
-                        <div class="st-item"><a href="http://drbl.in/fGVs"><img
+                        <div class="st-item"><a href="#"><img
                                 src="img/recetas/3.jpg"/></a></div>
                         <div class="st-title"><h2>Queen of Hearts</h2>
 
                             <h3></h3></div>
                     </li>
                     <li>
-                        <div class="st-item"><a href="http://drbl.in/fgvZ"><img
+                        <div class="st-item"><a href="#"><img
                                 src="img/recetas/4.jpg"/></a></div>
                         <div class="st-title"><h2>Dead Pirate vs Kraken</h2>
 
                             <h3></h3></div>
                     </li>
                     <li>
-                        <div class="st-item"><a href="http://drbl.in/fyfM"><img
+                        <div class="st-item"><a href="#"><img
                                 src="img/recetas/5.jpg"/></a></div>
                         <div class="st-title"><h2>Mountain Lion</h2>
 
                             <h3></h3></div>
                     </li>
                     <li>
-                        <div class="st-item"><a href="http://drbl.in/fCmJ"><img
+                        <div class="st-item"><a href="#"><img
                                 src="img/recetas/6.jpg"/></a></div>
                         <div class="st-title"><h2>Flying Skull</h2>
 
                             <h3></h3></div>
                     </li>
                     <li>
-                        <div class="st-item"><a href="http://drbl.in/fsMv"><img
+                        <div class="st-item"><a href="#"><img
                                 src="img/recetas/7.jpg"/></a></div>
                         <div class="st-title"><h2>The Fly &amp; Bureaucratic Elephant</h2>
 
                             <h3></h3></div>
                     </li>
                     <li>
-                        <div class="st-item"><a href="http://drbl.in/fGOf"><img
+                        <div class="st-item"><a href="#f"><img
                                 src="img/recetas/8.jpg"/></a></div>
                         <div class="st-title"><h2>Failsnake</h2>
 
                             <h3></h3></div>
                     </li>
                     <li>
-                        <div class="st-item"><a href="http://drbl.in/fypr"><img
+                        <div class="st-item"><a href="#"><img
                                 src="img/recetas/9.jpg"/></a></div>
                         <div class="st-title"><h2>Cultist</h2>
 
                             <h3></h3></div>
                     </li>
                     <li>
-                        <div class="st-item"><a href="http://drbl.in/fEmG"><img
+                        <div class="st-item"><a href="#"><img
                                 src="img/recetas/10.jpg"/></a></div>
                         <div class="st-title"><h2>Crusader &amp; Viking</h2>
 
                             <h3></h3></div>
                     </li>
                     <li>
-                        <div class="st-item"><a href="http://drbl.in/ffiw"><img
+                        <div class="st-item"><a href="#"><img
                                 src="img/recetas/11.jpg"/></a></div>
                         <div class="st-title"><h2>Crocodile</h2>
 
                             <h3></h3></div>
                     </li>
                     <li>
-                        <div class="st-item"><a href="http://drbl.in/fqWx"><img
+                        <div class="st-item"><a href="#"><img
                                 src="img/recetas/12.jpg"/></a></div>
                         <div class="st-title"><h2>Captain Banana</h2>
 
                             <h3></h3></div>
                     </li>
                     <li>
-                        <div class="st-item"><a href="http://drbl.in/fkuv"><img
-                                src="img/recetas/13.jpg"/></a></div>
+                        <div class="st-item">
+                            <a href="#"><img src="img/recetas/13.jpg"/></a>
+                        </div>
                         <div class="st-title"><h2>Werewolf</h2>
 
                             <h3></h3></div>
                     </li>
                     <li>
-                        <div class="st-item"><a href="http://drbl.in/fIli"><img
+                        <div class="st-item"><a href="#"><img
                                 src="img/recetas/14.jpg"/></a></div>
                         <div class="st-title"><h2>Vegetables</h2>
 
@@ -203,7 +171,7 @@
             </section>
         </div>
     </div>
-    <span class="bl-icon bl-icon-close">x</span>
+    <span class="bl-icon bl-icon-close icon-circle-arrow-left icon-2x"></span>
 </section>
 <section>
     <div class="bl-box">
@@ -262,23 +230,33 @@
                 messenger bag pitchfork... <a href="#">Read more</a></p>
         </article>
     </div>
-    <span class="bl-icon bl-icon-close"></span>
+    <span class="bl-icon bl-icon-close icon-circle-arrow-left icon-2x"></span>
 </section>
 <section>
     <div class="bl-box">
         <h2 class="bl-icon bl-icon-contact">Test</h2>
     </div>
     <div class="bl-content">
-        <h2>Get in touch</h2>
-
-        <p>Pinterest semiotics single-origin coffee craft beer thundercats irony, tumblr bushwick intelligentsia
-            pickled. Narwhal mustache godard master cleanse street art, occupy ugh selfies put a bird on it cray
-            salvia four loko gluten-free shoreditch. Occupy american apparel freegan cliche. Mustache trust fund
-            8-bit jean shorts mumblecore thundercats. Pour-over small batch forage cray, banjo post-ironic
-            flannel keffiyeh cred ethnic semiotics next level tousled fashion axe. Sustainable cardigan keytar
-            fap bushwick bespoke.</p>
+        <section class="set-9">
+            <div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
+                <a href="tests/test1.html" class="hi-icon hi-icon-images">Leyes de la alimentacion</a>
+                <a href="#set-9" class="hi-icon hi-icon-blank">Minerales <br><i
+                        class="icon-circle-arrow-left icon-4x"></i>
+                </a>
+                <!--<a href="#set-9" class="hi-icon hi-icon-blank">Plato del buen comer</a>-->
+                <!--<a href="#set-9" class="hi-icon hi-icon-blank">Jarra del buen beber</a>-->
+                <!--<a href="#set-9" class="hi-icon hi-icon-location">Location</a>-->
+            </div>
+            <div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9b">
+                <a href="#set-9" class="hi-icon hi-icon-blank">Images</a>
+                <!--<a href="#set-9" class="hi-icon hi-icon-blank">Edit</a>-->
+                <!--<a href="#set-9" class="hi-icon hi-icon-blank">Link</a>-->
+                <!--<a href="#set-9" class="hi-icon hi-icon-mail">Mail</a>-->
+                <!--<a href="#set-9" class="hi-icon hi-icon-location">Location</a>-->
+            </div>
+        </section>
     </div>
-    <span class="bl-icon bl-icon-close"></span>
+    <span class="bl-icon bl-icon-close icon-circle-arrow-left icon-2x"></span>
 </section>
 <!-- Panel items for the works -->
 <div class="bl-panel-items" id="bl-panel-work-items">
@@ -333,7 +311,7 @@
     </div>
     <nav>
         <span class="bl-next-work">&gt; Next Project</span>
-        <span class="bl-icon bl-icon-close"></span>
+        <span class="bl-icon bl-icon-close icon-circle-arrow-left icon-2x"></span>
     </nav>
 </div>
 </div>
@@ -344,16 +322,23 @@
 <script src="tympanus/layout_transitions/boxlayout.js"></script>
 <script src="tympanus/stack_slider/modernizr.custom.63321.js"></script>
 <script src="tympanus/stack_slider/jquery.stackslider.js"></script>
-
+<script type="text/javascript" src="tympanus/icon_hover_effect/modernizr.custom.js"></script>
 <script>
 
 </script>
 <script type="text/javascript">
     $(function () {
-        Boxlayout.init();
+
+//        setTimeout(function () {
+            Boxlayout.init();
+//        }, 3000);
+//        $('#st-stack').stackslider();
+
     });
     $("#bl-work-section").bind('cssClassChanged', function () {
         $('#st-stack').stackslider();
+//        console.log("asdasdasdas");
+//        Boxlayout.init();
     });
 </script>
 </body>

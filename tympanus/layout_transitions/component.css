@@ -1,15 +1,26 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 
-@font-face {
-	font-family: 'icomoon';
-	src:url('../fonts/icomoon.eot');
-	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/icomoon.woff') format('woff'),
-		url('../fonts/icomoon.ttf') format('truetype'),
-		url('../fonts/icomoon.svg#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
+/*@font-face {*/
+	/*font-family: 'icomoon';*/
+	/*src:url('../fonts/icomoon.eot');*/
+	/*src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),*/
+		/*url('../fonts/icomoon.woff') format('woff'),*/
+		/*url('../fonts/icomoon.ttf') format('truetype'),*/
+		/*url('../fonts/icomoon.svg#icomoon') format('svg');*/
+	/*font-weight: normal;*/
+	/*font-style: normal;*/
+/*}*/
+
+/*@font-face {*/
+    /*font-family: 'FontAwesome';*/
+    /*src: url('../../font/fontawesome-webfont.eot?v=3.2.1');*/
+    /*src: url('../../font/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'),*/
+    /*url('../../font/fontawesome-webfont.woff?v=3.2.1') format('woff'),*/
+    /*url('../../font/fontawesome-webfont.ttf?v=3.2.1') format('truetype'),*/
+    /*url('../../font/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');*/
+    /*font-weight: normal;*/
+    /*font-style: normal;*/
+/*}*/
 
 body, html { font-size: 100%; padding: 0; margin: 0; height: 100%;}
 
@@ -68,25 +79,25 @@ body {
 .bl-main > section:first-child {
 	top: 0;
 	left: 0;
-	background: #1998f0;
+	background: url("../../img/background.png")  rgba(25, 152, 240, 0.7);
 }
 
 .bl-main > section:nth-child(2) {
 	top: 0;
 	left: 50%;
-	background: #FA987D;
+	background: url("../../img/background.png") rgba(250, 152, 125, 0.7);
 }
 
 .bl-main > section:nth-child(3) {
 	top: 50%;
 	left: 0;
-	background: #72CCA7;
+	background: url("../../img/background.png")  rgba(114, 204, 167, 0.7);
 }
 
 .bl-main > section:nth-child(4) {
 	top: 50%;
 	left: 50%;
-	background: #10A296;
+	background: url("../../img/background.png")  rgba(16, 162, 150, 0.7);
 }
 
 .bl-box {
@@ -170,7 +181,7 @@ body {
 .bl-main > section .bl-icon-close {
 	position: absolute;
 	top: 20px;
-	right: 20px;
+	left: 20px;
 	cursor: pointer;
 	z-index: 100;
 	opacity: 0;
@@ -391,16 +402,18 @@ div.bl-panel-items > div.bl-hide-current-work {
 
 /* contenido de los cuadros */
 .bl-main > section:first-child.bl-expand {
-	background: #1998F0;
+	/*background: #1998F0;*/
+    background: url("../../img/background.png")  rgba(25, 152, 240, 0.7);
+
 }
 .bl-main > section:nth-child(2).bl-expand {
-	background: #F98262;
+	background: url("../../img/background.png") rgba(249, 130, 98, 0.7);
 }
 .bl-main > section:nth-child(3).bl-expand {
-	background: #4BBE8E;
+	background: url("../../img/background.png") rgba(75, 190, 142, 0.7);
 }
 .bl-main > section:nth-child(4).bl-expand {
-	background: #0D8278;
+	background: url("../../img/background.png") rgba(13, 130, 120, 0.7);
 }
 
 .bl-main.bl-expand-item > section:not(.bl-expand),

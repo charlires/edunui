@@ -15,7 +15,7 @@ var Boxlayout = (function () {
     // works section
         $sectionWork = $('#bl-work-section'),
     // work items
-        $workItems = $('#bl-work-items > li'),
+        $workItems = $('#st-wrapper > div .st-item'),
     // work panels
         $workPanelsContainer = $('#bl-panel-work-items'),
         $workPanels = $workPanelsContainer.children('div'),
@@ -38,6 +38,7 @@ var Boxlayout = (function () {
     // support css transitions
         supportTransitions = Modernizr.csstransitions;
 
+    console.log($workItems.length);
     function init() {
         initEvents();
     }
@@ -83,6 +84,7 @@ var Boxlayout = (function () {
         // clicking on a work item: the current section scales down and the respective work panel slides up
         $workItems.on('click', function (event) {
 
+            console.log(this);
             // scale down main section
             $sectionWork.addClass('bl-scale-down');
 
