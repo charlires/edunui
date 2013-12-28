@@ -35,14 +35,14 @@
         im[i] = new Image();
         im[i].src = tile[i];
         tilen[i] = [];
-        tilen[i][0] = '<img src="img/letras/' + tile[i][0] + '" width="100" height="100" alt="tile" \/>';
+        tilen[i][0] = '<img src="../img/letras/' + tile[i][0] + '" width="100" height="100" alt="tile" \/>';
         tilen[i][1] = i;
         tilen[i + 15] = [];
-        tilen[i + 15][0] = '<img src="img/letras/' + tile[i][1] + '" width="100" height="100" alt="tile" \/>';
+        tilen[i + 15][0] = '<img src="../img/letras/' + tile[i][1] + '" width="100" height="100" alt="tile" \/>';
         tilen[i + 15][1] = i;
     }
     function displayBack(i) {
-        document.getElementById('t' + i).innerHTML = '<img src="img/letras/' + back + '" width="100" height="100" alt="back" \/>';
+        document.getElementById('t' + i).innerHTML = '<img src="../img/letras/' + back + '" width="100" height="100" alt="back" \/>';
         document.getElementById('t' + i).onclick = function () {
             disp(i)
         };

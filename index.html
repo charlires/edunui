@@ -37,21 +37,13 @@
         <h2 class="bl-juegos">Selecciona un juego.</h2>
         <section class="set-9">
             <div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
-                <a href="memorama.html" class="hi-icon hi-icon-images">Vitaminas</a>
-                <a href="#set-9" class="hi-icon hi-icon-blank">Minerales <br>
+                <a href="juegos/vitaminas.html" class="hi-icon hi-icon-images">Vitaminas</a>
+                <a href="juegos/minerales.html" class="hi-icon hi-icon-blank">Minerales
                     <i class="icon-circle-arrow-left icon-4x"></i>
                 </a>
-                <!--<a href="#set-9" class="hi-icon hi-icon-blank">Plato del buen comer</a>-->
-                <!--<a href="#set-9" class="hi-icon hi-icon-blank">Jarra del buen beber</a>-->
-                <!--<a href="#set-9" class="hi-icon hi-icon-location">Location</a>-->
+                <a href="juegos/plato_buen_comer.html" class="hi-icon hi-icon-last hi-icon-blank">Plato del buen comer</a>
             </div>
-            <div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9b">
-                <a href="tests/test3.html" class="hi-icon hi-icon-blank">Images</a>
-                <!--<a href="#set-9" class="hi-icon hi-icon-blank">Edit</a>-->
-                <!--<a href="#set-9" class="hi-icon hi-icon-blank">Link</a>-->
-                <!--<a href="#set-9" class="hi-icon hi-icon-mail">Mail</a>-->
-                <!--<a href="#set-9" class="hi-icon hi-icon-location">Location</a>-->
-            </div>
+
         </section>
     </div>
     <!--<span class="bl-icon bl-icon-close">X</span>-->
@@ -239,7 +231,9 @@
     <div class="bl-content">
         <section class="set-9">
             <h2 class="bl-juegos">Selecciona un test.</h2>
+
             <h3 style="text-align: center;">"recuerda estudiar antes"</h3>
+
             <div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
                 <a href="tests/test1.html" class="hi-icon hi-icon-images">Leyes de la alimentacion</a>
                 <a href="tests/test2.html" class="hi-icon hi-icon-blank">Plato del buen comer <br><i
@@ -324,17 +318,11 @@
 </script>
 <script type="text/javascript">
     $(function () {
-
-//        setTimeout(function () {
-            Boxlayout.init();
-//        }, 3000);
-//        $('#st-stack').stackslider();
-
+        Boxlayout.init();
     });
     $("#bl-work-section").bind('cssClassChanged', function () {
         $('#st-stack').stackslider();
-//        console.log("asdasdasdas");
-//        Boxlayout.init();
+        $workItems = $('#st-wrapper > div .st-item')
     });
 </script>
 </body>

@@ -11,8 +11,13 @@
 
 .hi-icon-wrap {
 	text-align: center;
-	margin: 0 auto;
-	padding: 2em 0 3em;
+	/*margin: 0 auto;*/
+	/*padding: 2em 0 3em;*/
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
 }
 
 .hi-icon {
@@ -30,6 +35,14 @@
 	position: relative;
 	z-index: 1;
 	color: #fff;
+
+}
+
+.hi-icon-last {
+    bottom: 0;
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
 }
 
 .hi-icon:after {

@@ -219,6 +219,8 @@
 
 .set-9 {
 	/*background: #96a94b;*/
+    height: 90%;
+    position: relative;
 }
 
 @media screen and (max-width: 800px) {
