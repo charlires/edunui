@@ -1,17 +1,23 @@
 @import url('normalize.css');
 
 /* General Demo Style */
+
+@font-face {
+    font-family: 'Averia Sans Libre';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Averia Sans Libre Regular'), local('AveriaSansLibre-Regular'), url(../../fonts/yRJpjT39KxACO9F31mj_LqOxStDXxcWVrHkhVmjuyZ8.woff) format('woff');
+}
 body{
-	font-family: Cambria, Georgia, serif;
-	background: #269abc;
-    /*url(../images/bg.jpg);*/
+    font-family: 'Averia Sans Libre', cursive;
+    background-color: #f6ae6a;
 	font-weight: 300;
 	font-size: 15px;
 	color: #333;
-	-webkit-font-smoothing: antialiased;
 	overflow-y: scroll;
 	overflow-x: hidden;
 }
+
 a{
 	color: #555;
 	text-decoration: none;
@@ -45,8 +51,8 @@ a{
 	margin: 0;
 	position: relative;
 	font-weight: 300;
-	color: #777;
-	text-shadow: 1px 1px 1px rgba(255,255,255,0.7);
+	color: #FFF;
+	/*text-shadow: 1px 1px 1px rgba(255,255,255,0.7);*/
 }
 .container > header h2{
 	font-size: 14px;
