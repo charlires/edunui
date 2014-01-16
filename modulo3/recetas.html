@@ -1,9 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="no-js">
 <head>
-    <title></title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StackSlider: A Fun 3D Image Slider</title>
+    <!--<link rel="shortcut icon" href="../favicon.ico">-->
+    <link rel="stylesheet" type="text/css" href="../css/stack_slider/style.css" />
+    <script src="../js/stack_slider/modernizr.custom.63321.js"></script>
+    <!--[if lte IE 7]><style>.support-note .note-ie{display:block;}</style><![endif]-->
 </head>
 <body>
+<div class="container">
 
+    <h1 style="text-align: center">RECETAS</h1>
+
+    <section class="main">
+
+        <ul id="st-stack" class="st-stack-raw">
+            <li><div class="st-item"><a href="http://drbl.in/fgQV"><img src="../img/recetas/1.jpg"/></a></div><div class="st-title"><h2>Graverobber</h2> </div></li>
+            <li><div class="st-item"><a href="http://drbl.in/fpRz"><img src="../img/recetas/2.jpg"/></a></div><div class="st-title"><h2>Hideous Snake Queen</h2> </div></li>
+            <li><div class="st-item"><a href="http://drbl.in/fGVs"><img src="../img/recetas/3.jpg"/></a></div><div class="st-title"><h2>Queen of Hearts</h2> </div></li>
+            <li><div class="st-item"><a href="http://drbl.in/fgvZ"><img src="../img/recetas/4.jpg"/></a></div><div class="st-title"><h2>Dead Pirate vs Kraken</h2> </div></li>
+            <li><div class="st-item"><a href="http://drbl.in/fyfM"><img src="../img/recetas/5.jpg"/></a></div><div class="st-title"><h2>Mountain Lion</h2> </div></li>
+            <li><div class="st-item"><a href="http://drbl.in/fCmJ"><img src="../img/recetas/6.jpg"/></a></div><div class="st-title"><h2>Flying Skull</h2> </div></li>
+            <li><div class="st-item"><a href="http://drbl.in/fsMv"><img src="../img/recetas/7.jpg"/></a></div><div class="st-title"><h2>The Fly &amp; Bureaucratic Elephant</h2> </div></li>
+            <li><div class="st-item"><a href="http://drbl.in/fGOf"><img src="../img/recetas/8.jpg"/></a></div><div class="st-title"><h2>Failsnake</h2> </div></li>
+            <li><div class="st-item"><a href="http://drbl.in/fypr"><img src="../img/recetas/9.jpg"/></a></div><div class="st-title"><h2>Cultist</h2> </div></li>
+            <li><div class="st-item"><a href="http://drbl.in/fEmG"><img src="../img/recetas/10.jpg"/></a></div><div class="st-title"><h2>Crusader &amp; Viking</h2> </div></li>
+            <li><div class="st-item"><a href="http://drbl.in/ffiw"><img src="../img/recetas/11.jpg"/></a></div><div class="st-title"><h2>Crocodile</h2> </div></li>
+            <li><div class="st-item"><a href="http://drbl.in/fqWx"><img src="../img/recetas/12.jpg"/></a></div><div class="st-title"><h2>Captain Banana</h2> </div></li>
+            <li><div class="st-item"><a href="http://drbl.in/fkuv"><img src="../img/recetas/13.jpg"/></a></div><div class="st-title"><h2>Werewolf</h2> </div></li>
+            <li><div class="st-item"><a href="http://drbl.in/fIli"><img src="../img/recetas/14.jpg"/></a></div><div class="st-title"><h2>Vegetables</h2> </div></li>
+        </ul>
+        <p>Tip: DEJA EL MOUSE PRECIONADO PARA IR MAS RAPIDO.</p>
+    </section>
+
+</div><!-- /container -->
+<script type="text/javascript" src="../js/stack_slider/jquery.min.js"></script>
+<script type="text/javascript" src="../js/stack_slider/jquery.stackslider.js"></script>
+<script type="text/javascript">
+
+    $( function() {
+
+        $( '#st-stack' ).stackslider();
+
+    });
+
+</script>
 </body>
 </html>

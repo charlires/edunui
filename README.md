@@ -7,6 +7,7 @@ TODO
 ====
 - macronutrimentos add images and add text in spanish
 - leyes_alimentacion add evaluation
+- recetas put images and set dialog for the recipes
 
 - Set content on the blank pages
 - See the blog proposal
