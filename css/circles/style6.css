@@ -75,9 +75,67 @@
 	background: rgba(230,132,107,0);
 }
 
-.ch-img-1 {
+.ch-img-leyes {
     background-color: #d58512;
-	/*background-image: url(../../img/apple-steve-jobs.jpg);*/
+    background-image: url(../../img/modulos/lonche.png);
+    background-size: 200px;
+    background-repeat:no-repeat;
+}
+
+.ch-img-macro {
+    background-color: #d53454;
+    background-image: url(../../img/modulos/zanahoria.png);
+    background-size: 200px;
+    background-repeat:no-repeat;
+}
+
+.ch-img-micro {
+    background-color: #d53400;
+    background-image: url(../../img/modulos/encias.png);
+    background-size: 200px;
+    background-repeat:no-repeat;
+}
+
+.ch-img-actividad {
+    background-color: #d58512;
+    background-image: url(../../img/modulos/nino_balon.png);
+    background-size: 200px;
+    background-repeat:no-repeat;
+}
+
+.ch-img-digestivo {
+    background-color: #d53454;
+    background-image: url(../../img/modulos/aparato_digestivo.png);
+    background-size: 200px;
+    background-repeat:no-repeat;
+}
+
+.ch-img-lavado {
+    background-color: #d53400;
+    background-image: url(../../img/modulos/manos.png);
+    background-size: 300px;
+    background-repeat:no-repeat;
+}
+
+.ch-img-mira {
+    background-color: #d58512;
+    background-image: url(../../img/modulos/mira.png);
+    background-size: 200px;
+    background-repeat:no-repeat;
+}
+
+.ch-img-recetas {
+    background-color: #d53454;
+    background-image: url(../../img/modulos/receta.png);
+    background-size: 200px;
+    background-repeat:no-repeat;
+}
+
+.ch-img-refrigerio {
+    background-color: #d53400;
+    background-image: url(../../img/modulos/sandwich.png);
+    background-size: 200px;
+    background-repeat:no-repeat;
 }
 
 .ch-img-2 {
