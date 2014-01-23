@@ -29,7 +29,7 @@ body {
 
 .st-wrapper {
 	width: 100%;
-	height: 500px;
+	height: 600px;
 	position: relative;
 	margin: 0 auto;
 	-webkit-perspective: 1200px;
@@ -235,8 +235,9 @@ body {
 }
 
 .st-wrapper .st-item a {
-	background: #fff;
-	box-shadow: 0 0 0 9px #fff, 0 1px 3px 9px rgba(0,0,0,0.3);
+	/*background: #fff;*/
+	box-shadow: 0 0 0 4px #ffde48, 0 1px 3px 6px rgba(0,0,0,0.3);
+    border-radius: 30px;
 }
 
 @media screen and (max-width: 1310px){
