@@ -3,15 +3,25 @@ edunui
 
 Educacion y Nutricion Infantil
 
-TODO
-====
-- macronutrimentos add images and add text in spanish
-- leyes_alimentacion add evaluation
-- recetas put images and set dialog for the recipes
+Pendientes
+==========
+Leyes de la alimentacion
+------------------------
+- evaluar la encuesta
 
-- Set content on the blank pages
-- See the blog proposal
-- Cut images to use them
-- Set punctuations
+Lavado de manos
+----------------
+- centrar circulos
+- con la descripcion del paso
 
-- recetas css
+Refrigerios saludables
+---------------------
+
+
+Recetas
+-------
+- centrarlas
+
+Ayuda Joel
+----------
+- alinear el dialog al centro

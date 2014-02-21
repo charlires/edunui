@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
     <link rel="stylesheet" type="text/css" href="../css/natural_languaje_form/default.css"/>
     <link rel="stylesheet" type="text/css" href="../css/natural_languaje_form/component.css"/>
+    <link rel="stylesheet" href="../css/leyes_alimentacions.css"/>
     <!--<link rel="stylesheet" type="text/css" href="../css/font-awesome/css/font-awesome.min.css"/>-->
 
     <title></title>
@@ -22,7 +23,8 @@
     <div class="main clearfix">
         <form id="nl-form" class="nl-form">
             <span  id="i-completa" class="glyphicon glyphicon-record"></span>
-            <i></i> Una alimentacion
+            <!--<i></i> -->
+            Una alimentacion
             <select id="completa">
                 <option value="1" selected>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
                 <option value="equilibrada">equilibrada</option>
@@ -33,7 +35,8 @@
                 <option value="completa">completa</option>
             </select> incluye todos los nutrimentos.
             <br><br>
-            <i id="i-equilibrada" class="icon-circle-blank"></i> Una alimentacion
+            <i id="i-equilibrada" class="glyphicon glyphicon-record"></i>
+            Una alimentacion
             <select id="equilibrada">
                 <option value="1" selected>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
                 <option value="equilibrada">equilibrada</option>
@@ -44,7 +47,8 @@
                 <option value="completa">completa</option>
             </select> contiene las porciones adecuadas.
             <br><br>
-            <i id="i-suficiente" class="icon-circle-blank"></i> Una alimentacion
+            <i id="i-suficiente" class="glyphicon glyphicon-record"></i>
+            Una alimentacion
             <select id="suficiente">
                 <option value="1" selected>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
                 <option value="equilibrada">equilibrada</option>
@@ -55,7 +59,8 @@
                 <option value="completa">completa</option>
             </select> Debe cubrir tus necesidades para crecer sano y fuerte.
             <br><br>
-            <i id="i-variada" class="icon-circle-blank"></i> Una alimentacion
+            <i id="i-variada" class="glyphicon glyphicon-record"></i>
+            Una alimentacion
             <select id="variada">
                 <option value="1" selected>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
                 <option value="equilibrada">equilibrada</option>
@@ -66,7 +71,8 @@
                 <option value="completa">completa</option>
             </select> incluye diferentes alimentos de cada grupo en tus comidas.
             <br><br>
-            <i id="i-adecuada" class="icon-circle-blank"></i> Una alimentacion
+            <i id="i-adecuada" class="glyphicon glyphicon-record"></i>
+            Una alimentacion
             <select id="adecuada">
                 <option value="1" selected>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
                 <option value="equilibrada">equilibrada</option>
@@ -77,7 +83,7 @@
                 <option value="completa">completa</option>
             </select> debe ser de acuerdo a tus gustos y saludable.
             <div class="nl-submit-wrap">
-                <button class="nl-submit">Evaluar</button>
+                <button class="nl-submit" onclick="evaluar()">Evaluar</button>
             </div>
             <div class="nl-overlay"></div>
         </form>
@@ -88,24 +94,38 @@
 <script type="text/javascript">
 
     function evaluar() {
-        var icon_correct = "glyphicon icon-ok";
-        var icon_incorrect = "glyphicon icon-ok";
-        var icon_not_answered = "glyphicon icon-question-sign";
+        console.log();
+        var icon_correct = "glyphicon glyphicon-ok";
+        var icon_incorrect = "glyphicon glyphicon-remove";
 
-        if ($("#completa")[0].value == "completa") {
-            $("#i-completa").removeAttr("class");
-            $("#i-completa").addClass(icon_correct);
-        } else if ($("#completa")[0].value == "1") {
-            $("#i-completa").removeAttr("class");
-            $("#i-completa").addClass(icon_not_answered);
-        } else {
-            $("#i-completa").removeAttr("class");
-            $("#i-completa").addClass(icon_incorrect);
+        var preguntas = ['#i-completa', '#i-equilibrada', '#i-variada', '#i-adecuada', '#i-suficiente'];
+        var respuestas = ['completa', 'equilibrada', 'variada', 'adecuada', 'suficiente'];
+
+        var contador = 0;
+
+        for (var i = 0; i < preguntas.length; i++) {
+            console.log(respuestas[i])
+            if ($("#" + respuestas[i])[0].value === respuestas[i]) {
+                contador ++;
+                $(preguntas[i]).removeAttr("class");
+                $(preguntas[i]).addClass(icon_correct);
+                $(preguntas[i]).css('color', 'green');
+            } else {
+                $(preguntas[i]).removeAttr("class");
+                $(preguntas[i]).addClass(icon_incorrect);
+                $(preguntas[i]).css('color', 'red');
+            }
         }
+
+        if (contador == 5) {
+            alert('ganaste');
+        }
+
+
     }
 
     $("#nl-form").bind("click", function () {
-        evaluar();
+//        evaluar();
         return false;
     });
 </script>
