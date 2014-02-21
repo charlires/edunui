@@ -7,7 +7,7 @@ Pendientes
 ==========
 Leyes de la alimentacion
 ------------------------
-- evaluar la encuesta
+- modal
 
 Lavado de manos
 ----------------
@@ -16,12 +16,22 @@ Lavado de manos
 
 Refrigerios saludables
 ---------------------
-
+- juego de las loncheras
 
 Recetas
 -------
 - centrarlas
 
+Activacion Fisica
+-----------------
+- Fondo estilo whatsapp con pelotas y juguetes
+- centrar
+
+Blog
+----
+- simple twitter con jquery
+
 Ayuda Joel
 ----------
 - alinear el dialog al centro
+
