@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Blog</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <style>
+
+        body {
+            margin-top: 10px;  /*100px is double the height of the navbar - I made it a big larger for some more space - keep it at 50px at least if you want to use the fixed top nav*/
+            /*color: #ffffff;*/
+
+        }
+
+        h1 {
+            font-size: 60px;
+        }
+
+        footer {
+            margin: 50px 0;
+        }
+
+        small {
+            color: #3276b1 !important;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-8">
+
+            <!-- the actual blog post: title/author/date/content -->
+            <h1>Bienvenido a nuestro blog</h1>
+            <hr>
+            <img style="text-align: center;width: 700px;height: 300px; margin-left: 20px"  src="img/blog.png" width="900px" height="300px" class="img-responsive">
+            <hr>
+            <p class="lead">Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.</p>
+            <p>You know, being a test pilot isn't always the healthiest business in the world.</p>
+            <p>Cookie jelly beans soufflé icing. Gummi bears tootsie roll powder chupa chups cheesecake chocolate jelly-o lollipop lollipop. Halvah applicake chupa chups. Marshmallow chocolate jujubes icing lollipop gummi bears chupa chups pudding bonbon. Jelly beans jelly soufflé jujubes. Sesame snaps lollipop icing donut lemon drops soufflé.</p>
+            <p>Donut caramels gingerbread. Sweet roll macaroon pastry cotton candy oat cake sesame snaps biscuit lemon drops dessert. Candy canes carrot cake danish carrot cake soufflé jelly chocolate cake muffin. Topping brownie donut. Oat cake marzipan dragée cheesecake. Donut chocolate cake jujubes tart dragée toffee.</p>
+            <p>Tilefish electric knifefish salmon shark southern Dolly Varden. Pacific argentine tope golden shiner ilisha barreleye loosejaw catla, dogteeth tetra catfish tenpounder nase scup Ragfish brotula." Codlet brook lamprey pleco, Japanese eel convict cichlid titan triggerfish, plownose chimaera topminnow Black scalyfin. Walleye pollock, blue shark Sacramento blackfish prickleback airbreathing catfish yellowfin cutthroat trout, goby southern sandfish. North Pacific daggertooth dorab cepalin weever flying gurnard.</p>
+            <p><strong>Placeholder text by:</strong>
+            </p>
+            <ul>
+                <li><a href="http://spaceipsum.com/">Space Ipsum</a>
+                </li>
+                <li><a href="http://cupcakeipsum.com/">Cupcake Ipsum</a>
+                </li>
+                <li><a href="http://tunaipsum.com/">Tuna Ipsum</a>
+                </li>
+            </ul>
+
+            <hr>
+
+            <!-- the comment box -->
+            <div class="well">
+                <h4>Dejanos tus comentarios:</h4>
+                <form role="form">
+                    <div class="form-group">
+                        <input id="nombre" placeholder="Escribe tu nombre" type="text" class="form-control"/>
+                        <br/>
+                        <textarea id="comentario" placeholder="Escribe un comentario" class="form-control" rows="3"></textarea>
+                    </div>
+                    <button type="button" onclick="comentar()" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+
+            <hr>
+
+            <!-- the comments -->
+            <div id="comments">
+                <h3>Juanito
+                    <small>24 de Agosto del 2013 - 9:41 PM </small>
+                </h3>
+                <p>
+                    Hola me llamo Juan blah blah blah blah blah blah blah blah blah blah blah
+                </p>
+
+                <h3>Pepe
+                    <small>24 de Agosto del 2013 - 9:47 PM</small>
+                </h3>
+                <p>Don't listen to this guy, any blog with the categories 'dinosaurs, spaceships, fried foods, wild animals, alien abductions, business casual, robots, and fireworks' has true potential.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <footer>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>EL NIÑO, LA NUTRICION Y LA EDUCACION PARA LA PREVENCION 2014</p>
+            </div>
+        </div>
+    </footer>
+
+</div>
+<!-- /.container -->
+
+<!-- JavaScript -->
+<script src="js/jquery.min.js"></script>
+
+<!--<script src="js/bootstrap.js"></script>-->
+
+<script>
+    var month=new Array();
+    month[0]="Enero";
+    month[1]="Febrero";
+    month[2]="Marzo";
+    month[3]="Abril";
+    month[4]="Mayo";
+    month[5]="Junio";
+    month[6]="Julio";
+    month[7]="Agosto";
+    month[8]="Septiembre";
+    month[9]="Octubre";
+    month[10]="Noviembre";
+    month[11]="Deciembre";
+
+    function formatAMPM(date) {
+        var hours = date.getHours();
+        var minutes = date.getMinutes();
+        var ampm = hours >= 12 ? 'PM' : 'AM';
+        hours = hours % 12;
+        hours = hours ? hours : 12; // the hour '0' should be '12'
+        minutes = minutes < 10 ? '0'+minutes : minutes;
+        var strTime = hours + ':' + minutes + ' ' + ampm;
+        return strTime;
+    }
+
+    function comentar() {
+
+        var date = new Date();
+        var nombre = $("#nombre")[0].value;
+        var comentario = $("#comentario")[0].value;
+        console.log(nombre, comentario);
+        var html = "" +
+                "<h3>" + nombre + "\n" +
+                "<small>" + date.getUTCDate() + " de " + month[date.getMonth()] + " del " + date.getFullYear() + " - " + formatAMPM(date) + " </small>" +
+                "</h3>" +
+                "<p>" + comentario + "</p>";
+
+        $("#comments").append(html);
+    }
+</script>
+
+
+</body>
+
+</html>
