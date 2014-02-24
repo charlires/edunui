@@ -1,0 +1,230 @@
+
+@font-face {
+    font-family: 'Averia Sans Libre';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Averia Sans Libre Regular'), local('AveriaSansLibre-Regular'), url(../fonts/yRJpjT39KxACO9F31mj_LqOxStDXxcWVrHkhVmjuyZ8.woff) format('woff');
+}
+
+body {
+    background-color: #f6ae6a;
+    font-family: 'Averia Sans Libre', cursive;
+}
+
+body {
+    /*background: url("../img/background.png") rgba(25, 152, 240, 0.7);*/
+    margin: 0 auto !important;
+}
+/* Add some margin to the page and set a default font and colour */
+
+body {
+    margin: 30px;
+    /*font-family: "Georgia", serif;*/
+    line-height: 1.8em;
+    color: #333;
+}
+
+/* Give headings their own font */
+
+h1, h2, h3, h4 {
+    /*font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
+    font-family: 'Averia Sans Libre', cursive;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Main content area */
+
+#content {
+    margin: 80px 70px;
+    text-align: center;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+/* Header/footer boxes */
+
+.wideBox {
+    clear: both;
+    text-align: center;
+    margin: 70px;
+    padding: 10px;
+    background: #ebedf2;
+    border: 1px solid #333;
+}
+
+.wideBox h1 {
+    font-weight: bold;
+    margin: 20px;
+    color: #666;
+    font-size: 1.5em;
+}
+
+/* Slots for final card positions */
+
+#cardSlots1, #cardSlots2 {
+    margin: 50px auto 0 auto;
+    background: #ddf;
+}
+
+/* The initial pile of unsorted cards */
+
+#cardPile {
+    margin: 0 auto;
+    background: #ffd;
+}
+
+#cardSlots1 {
+    /*float: left;*/
+    /*margin-right: auto;*/
+    width: 650px;
+    height: 150px;
+    padding: 20px;
+    border: 2px solid #333;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+    box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+}
+
+#cardSlots2 {
+    /*float: right;*/
+    /*margin-left: auto;*/
+      width: 650px;
+      height: 150px;
+      padding: 20px;
+      border: 2px solid #333;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      -moz-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+      -webkit-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+      box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+  }
+
+#cardPile {
+    width: 651px;
+    height: 250px;
+    padding: 20px;
+    border: 2px solid #333;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+    box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+}
+
+/* Individual cards and slots */
+
+#cardSlots1 div, #cardSlots2 div {
+    float: left;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    /*padding-top: 40px;*/
+    /*margin-bottom: 10px;*/
+    padding-bottom: 0;
+    border: 2px solid #333;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin: 0 0 0 1px;
+    background: #fff;
+}
+
+ #cardPile div {
+      float: left;
+      width: 100px;
+      height: 100px;
+      padding: 10px;
+      /*padding-top: 40px;*/
+     margin-bottom: 10px;
+      padding-bottom: 0;
+      border: 2px solid #333;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      margin: 0 0 0 1px;
+      background: #fff;
+  }
+
+#cardSlots1 div:first-child, #cardPile div:first-child {
+    /*margin-left: 0;*/
+}
+
+#cardSlots1 div.hovered {
+    background: #aaa;
+}
+
+#cardSlots1 div {
+    border-style: dashed;
+}
+
+#cardSlots2 div:first-child, #cardPile div:first-child {
+    /*margin-left: 0;*/
+}
+
+#cardSlots2 div.hovered {
+    background: #aaa;
+}
+
+#cardSlots2 div {
+    border-style: dashed;
+}
+
+#cardPile div {
+    background: #666;
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 0 0 3px #000;
+}
+
+#cardPile div.ui-draggable-dragging {
+    -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+    box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+}
+
+/* Individually coloured cards */
+
+/*#card1.correct { background: #b14943; }*/
+/*#card2.correct { background: #b14943; }*/
+/*#card3.correct { background: #b14943; }*/
+/*#card4.correct { background: #b14943; }*/
+/*#card5.correct { background: #b14943; }*/
+/*#card6.correct { background: #b14943; }*/
+/*#card7.correct { background: #b14943; }*/
+/*#card8.correct { background: #b14943; }*/
+/*#card9.correct { background: #b14943; }*/
+/*#card10.correct { background: #b14943; }*/
+
+.correct {
+    background: #b14943 !important;
+}
+
+
+/* "You did it!" message */
+#successMessage {
+    position: absolute;
+    left: 580px;
+    top: 250px;
+    width: 0px;
+    height: 0;
+    z-index: 100;
+    background: #dfd;
+    border: 2px solid #333;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+    -webkit-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+    box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+    padding: 20px;
+}
+
