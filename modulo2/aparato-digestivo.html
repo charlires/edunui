@@ -1,9 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title></title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive CSS Timeline with 3D Effect</title>
+    <meta name="description" content="Responsive CSS Timeline with 3D Effect" />
+    <meta name="keywords" content="timeline, 3d, css, css3, css-only, transitions, responsive, fluid" />
+    <meta name="author" content="Codrops" />
+    <!--<link rel="shortcut icon" href="../favicon.ico">-->
+    <link rel="stylesheet" type="text/css" href="../css/aparato_digestivo/style.css" />
+    <script src="../js/aparati_digestivo/modernizr.custom.63321.js"></script>
+    <!--[if lte IE 7]><style>.support-note .note-ie{display:block;}</style><![endif]-->
 </head>
 <body>
+<div class="container">
+
+    <section class="main">
+
+        <ul class="timeline">
+
+            <li class="event">
+                <input type="radio" name="tl-group" checked/>
+                <label></label>
+                <div class="thumb boca"><span>Boca</span></div>
+                <div class="content-perspective">
+                    <div class="content">
+                        <div class="content-inner">
+                            <h3>Boca: </h3>
+                            <p>Mastica. </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="event">
+                <input type="radio" name="tl-group"/>
+                <label></label>
+                <div class="thumb estomago"><span>Estomago</span></div>
+                <div class="content-perspective">
+                    <div class="content">
+                        <div class="content-inner">
+                            <h3>Estomago: </h3>
+                            <p>Procesa Alimentos</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="event">
+                <input type="radio" name="tl-group"/>
+                <label></label>
+                <div class="thumb intestino-d"><span style="bottom: -50px">Intestino Delgado</span></div>
+                <div class="content-perspective">
+                    <div class="content">
+                        <div class="content-inner">
+                            <h3>Intestino Delgado: </h3>
+                            <p>Absorve nutrientes. </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="event">
+                <input type="radio" name="tl-group"/>
+                <label></label>
+                <div class="thumb intestino-g"><span style="bottom: -50px">Intestino Grueso</span></div>
+                <div class="content-perspective">
+                    <div class="content">
+                        <div class="content-inner">
+                            <h3>Intestino Grueso:</h3>
+                            <p>Absorbe agua y convierte lo que no sirve en desechos.</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="event">
+                <input type="radio" name="tl-group"/>
+                <label></label>
+                <div class="thumb ano"><span>Ano</span></div>
+                <div class="content-perspective">
+                    <div class="content">
+                        <div class="content-inner">
+                            <h3>Ano: </h3>
+                            <p>Expulsa los desechos.</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </section>
+
+</div><!-- /container -->
 
 </body>
 </html>

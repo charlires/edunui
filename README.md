@@ -15,7 +15,6 @@ Lavado de manos
 
 Refrigerios saludables
 ---------------------
-- juego de las loncheras
 
 Recetas
 -------
@@ -27,6 +26,10 @@ Activacion Fisica
 
 Blog
 ----
+
+Aparato digestivo
+-----------------
+- Falta titulo
 
 Ayuda Joel
 ----------
