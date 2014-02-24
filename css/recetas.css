@@ -8,8 +8,25 @@
 body {
     background-color: #f6ae6a;
     font-family: 'Averia Sans Libre', cursive;
+    margin-top: 60px;
+}
+
+.container {
+    /*margin: 10px;*/
+    /*border: dashed;*/
+    /*border-radius: 30px;*/
+    /*width: 100%;*/
+
+    /*border: 2px solid #333;*/
+    /*-moz-border-radius: 10px;*/
+    /*-webkit-border-radius: 10px;*/
+    /*border-radius: 10px;*/
 }
 
 h1, h2 {
     font-family: 'Averia Sans Libre', cursive;
+}
+
+h1 {
+    margin-bottom: 60px;
 }

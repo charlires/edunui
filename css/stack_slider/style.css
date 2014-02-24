@@ -11,6 +11,25 @@
 	/*font-style: normal;*/
 /*}*/
 
+/*@font-face {*/
+    /*font-family: 'Englebert';*/
+    /*font-style: normal;*/
+    /*font-weight: 400;*/
+    /*src: local('Englebert'), local('Englebert-Regular'), url(http://themes.googleusercontent.com/static/fonts/englebert/v2/5vhE18ztcHRcsYmBaZ6CaD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');*/
+/*}*/
+/*@font-face {*/
+    /*font-family: 'Lato';*/
+    /*font-style: normal;*/
+    /*font-weight: 400;*/
+    /*src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');*/
+/*}*/
+/*@font-face {*/
+    /*font-family: 'Lato';*/
+    /*font-style: normal;*/
+    /*font-weight: 700;*/
+    /*src: local('Lato Bold'), local('Lato-Bold'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/wkfQbvfT_02e2IWO3yYueQ.woff) format('woff');*/
+/*}*/
+
 @font-face {
     font-family: 'Averia Sans Libre';
     font-style: normal;
@@ -22,6 +41,15 @@ body {
     background-color: #f6ae6a;
     font-family: 'Averia Sans Libre', cursive;
 }
+
+h2, h1 {
+    font-family: 'Averia Sans Libre', cursive !important;
+}
+
+/** {*/
+    /*background-color: #f6ae6a;*/
+    /*font-family: 'Averia Sans Libre', cursive;*/
+/*}*/
 
 .js .st-stack-raw {
 	display: none;
@@ -127,7 +155,7 @@ body {
 }
 
 .st-wrapper nav span {
-	color: transparent;
+	/*color: transparent;*/
 	position: absolute;
 	width: 40px;
 	height: 40px;
@@ -166,13 +194,13 @@ body {
 	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
 
-.st-wrapper nav span:first-child:before {
-	content: "\4c";
-}
+/*.st-wrapper nav span:first-child:before {*/
+	/*content: "\4c";*/
+/*}*/
 
-.st-wrapper nav span:last-child:before {
-	content: "\52";
-}
+/*.st-wrapper nav span:last-child:before {*/
+	/*content: "\52";*/
+/*}*/
 
 .st-wrapper nav span:hover:before {
 	color: #333;

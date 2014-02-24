@@ -261,7 +261,7 @@
 			// add navigation
 			if( this.itemsCount > 1 ) {
 
-				this.$navigation = $( '<nav><span>Previous</span><span>Next</span></nav>' );
+				this.$navigation = $( '<nav><span><i style="color: #b14943; font-size: 30px;" class="glyphicon glyphicon-arrow-left"></i></span><span><i style="color: #b14943; font-size: 30px;" class="glyphicon glyphicon-arrow-right"></i></span></nav>' );
 				this.$wrapper.append( this.$navigation );
 
 			}

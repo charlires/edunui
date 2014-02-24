@@ -33,12 +33,13 @@ h1, h2, h3, h4 {
 
 h1 {
     text-align: center;
+    padding-top: 100px;
 }
 
 /* Main content area */
 
 #content {
-    margin: 80px 70px;
+    margin: 30px 70px 80px 70px;
     text-align: center;
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -67,44 +68,77 @@ h1 {
 
 #cardSlots {
     margin: 50px auto 0 auto;
-    background: #ddf;
+    /*background: #ddf;*/
+
 }
 
 /* The initial pile of unsorted cards */
 
 #cardPile {
     margin: 0 auto;
-    background: #ffd;
+    /*background: #ffd;*/
 }
 
-#cardSlots, #cardPile {
+#cardSlots {
+    width: 930px;
+    height: 250px;
+    padding: 20px;
+    /*border: 2px solid #333;*/
+    /*-moz-border-radius: 10px;*/
+    /*-webkit-border-radius: 10px;*/
+    /*border-radius: 10px;*/
+    /*-moz-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);*/
+    /*-webkit-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);*/
+    /*box-shadow: 0 0 .3em rgba(0, 0, 0, .8);*/
+}
+
+#cardPile {
     width: 930px;
     height: 150px;
     padding: 20px;
-    border: 2px solid #333;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    -moz-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
-    -webkit-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
-    box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+    /*border: 2px solid #333;*/
+    /*-moz-border-radius: 10px;*/
+    /*-webkit-border-radius: 10px;*/
+    /*border-radius: 10px;*/
+    /*-moz-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);*/
+    /*-webkit-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);*/
+    /*box-shadow: 0 0 .3em rgba(0, 0, 0, .8);*/
 }
 
 /* Individual cards and slots */
 
-#cardSlots div, #cardPile div {
+#cardSlots div{
     float: left;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     padding: 10px;
-    /*padding-top: 40px;*/
+    padding-top: 80px;
     padding-bottom: 0;
-    border: 2px solid #333;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    margin: 0 0 0 10px;
-    background: #fff;
+    /*border: 2px solid #333;*/
+    /*-moz-border-radius: 10px;*/
+    /*-webkit-border-radius: 10px;*/
+    /*border-radius: 10px;*/
+    margin: 45px 0 0 15px;
+    /*background: #fff;*/
+    background:  url("../img/refrigerios/lonchera.png");
+    background-size:200px 200px;
+    background-repeat: no-repeat;
+    /*background-origin: content-box;*/
+}
+
+#cardPile div {
+    float: left;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    padding-top: 60px;
+    padding-bottom: 0;
+    /*border: 2px solid #333;*/
+    /*-moz-border-radius: 10px;*/
+    /*-webkit-border-radius: 10px;*/
+    /*border-radius: 10px;*/
+    margin: 0 0 0 15px;
+    /*background: #fff;*/
 }
 
 #cardSlots div:first-child, #cardPile div:first-child {
@@ -112,39 +146,40 @@ h1 {
 }
 
 #cardSlots div.hovered {
-    background: #aaa;
+    /*background: #aaa;*/
+    opacity:0.4;
 }
 
 #cardSlots div {
-    border-style: dashed;
+    /*border-style: dashed;*/
 }
 
 #cardPile div {
-    background: #666;
-    color: #fff;
+    /*background: #666;*/
+    /*border-radius: 10px;*/
+    /*color: #fff;*/
     font-size: 20px;
     text-shadow: 0 0 3px #000;
 }
 
 #cardPile div.ui-draggable-dragging {
-    -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
-    -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
-    box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+    /*-moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);*/
+    /*-webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);*/
+    /*box-shadow: 0 0 .5em rgba(0, 0, 0, .8);*/
 }
 
 /* Individually coloured cards */
 
-#card1.correct { background: #b14943; }
-#card2.correct { background: #b14943; }
-#card3.correct { background: #b14943; }
-#card4.correct { background: #b14943; }
-#card5.correct { background: #b14943; }
-#card6.correct { background: #b14943; }
-#card7.correct { background: #b14943; }
-#card8.correct { background: #b14943; }
-#card9.correct { background: #b14943; }
-#card10.correct { background: #b14943; }
-
+/*#card1.correct { background: #b14943; }*/
+/*#card2.correct { background: #b14943; }*/
+/*#card3.correct { background: #b14943; }*/
+/*#card4.correct { background: #b14943; }*/
+/*#card5.correct { background: #b14943; }*/
+/*#card6.correct { background: #b14943; }*/
+/*#card7.correct { background: #b14943; }*/
+/*#card8.correct { background: #b14943; }*/
+/*#card9.correct { background: #b14943; }*/
+/*#card10.correct { background: #b14943; }*/
 
 /* "You did it!" message */
 #successMessage {

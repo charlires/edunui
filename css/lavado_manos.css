@@ -12,7 +12,7 @@ body {
 }
 
 body {
-    background: url("../img/background.png") rgba(25, 152, 240, 0.7);
+    /*background: url("../img/background.png") rgba(25, 152, 240, 0.7);*/
     margin: 0 auto !important;
 }
 /* Add some margin to the page and set a default font and colour */
@@ -31,7 +31,7 @@ h1, h2, h3, h4 {
     font-family: 'Averia Sans Libre', cursive;
 }
 
-h1, h2 {
+h1, h2, h3 {
     text-align: center;
 }
 
