@@ -56,6 +56,7 @@ h2, h1, h3 {
 }
 
 .st-wrapper {
+
 	width: 100%;
 	height: 600px;
 	position: relative;
@@ -70,6 +71,7 @@ h2, h1, h3 {
 	-ms-perspective-origin : 50% 100%;
 	perspective: 1200px;
 	perspective-origin : 50% 100%;
+    margin-top: 60px;
 }
 
 .st-stack {
@@ -113,10 +115,12 @@ h2, h1, h3 {
 
 .st-wrapper .st-title,
 .st-wrapper nav {
-	position: absolute;
+    bottom: -27px;
+
+    position: absolute;
 	width: 100%;
 	left: 0;
-	bottom: 0;
+	/*bottom: 0;*/
 	text-align: center;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;

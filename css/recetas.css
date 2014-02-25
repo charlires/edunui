@@ -40,3 +40,7 @@ ul {
     font-family: 'Averia Sans Libre', cursive;
     font-size: 20px !important;
 }
+
+.st-wrapper {
+    margin-top: 60px !important;
+}
