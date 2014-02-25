@@ -5,6 +5,14 @@ Educacion y Nutricion Infantil
 
 Pendientes
 ==========
+
+
+Macronitrimentos
+----------------
+- imagen
+- Tabla con grupos
+
+
 Leyes de la alimentacion
 ------------------------
 - modal centrado

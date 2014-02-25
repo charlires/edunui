@@ -23,6 +23,10 @@ body{
 
 }
 
+h1 {
+    font-size: 60px !important;
+}
+
 a{
 	color: #555;
 	text-decoration: none;
