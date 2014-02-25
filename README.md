@@ -3,72 +3,9 @@ edunui
 
 Educacion y Nutricion Infantil
 
-Pendientes
+YA QUEDO
 ==========
 
-
-Macronitrimentos
-----------------
-- imagen
-- Tabla con grupos
-
-
-Leyes de la alimentacion
-------------------------
-- modal centrado
-
-Lavado de manos
-----------------
-- centrar circulos
-
-Refrigerios saludables
----------------------
-
-Recetas
--------
-- centrarlas
-
-Activacion Fisica
------------------
-- centrar
-
-Blog
-----
-
-Aparato digestivo
------------------
-- Falta titulo
-
-Ayuda Joel
-----------
-- alinear el dialog al centro
-- Fondo estilo whatsapp con pelotas y juguetes
-
-Observa
-
-position absolute
-top
-left
-
-Pendientes
-==========
-
-Modulo 1
---------
-- Titulo
-
-Aparato digestivo
------------------
-- Titulo
-
-Modulo 3
---------
-- Titulo mas chico
-
-Recetas
--------
-- Binietas
-- Text en minusculas
 
 
 
