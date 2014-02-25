@@ -26,12 +26,12 @@ function init() {
 
     // Create the pile of shuffled cards
     var numbers = [ 1, 2, 3, 4, 5, 6, 7, 8 ];
-    var minerales = ['calcio', 'fosforo', 'potasio', 'sodio', 'hierro', 'yodo', 'fluor', 'zinc']
+
     numbers.sort( function() { return Math.random() - .5 } );
     console.log(numbers);
 
     for ( var i=0; i<8; i++ ) {
-        $('<div><img width="65" height="65" src=\"../img/arrastra/' + numbers[i] + '.png\"></div>').data( 'number', numbers[i] ).attr( 'id', 'card'+numbers[i] ).appendTo( '#cardPile' ).draggable( {
+        $('<div><img width="120" height="120" src=\"../img/arrastra/' + numbers[i] + '.png\"></div>').data( 'number', numbers[i] ).attr( 'id', 'card'+numbers[i] ).appendTo( '#cardPile' ).draggable( {
             containment: '#content',
             stack: '#cardPile div',
             cursor: 'move',
@@ -40,9 +40,19 @@ function init() {
     }
 
     // Create the card slots
-    var words = ['calcio', 'fosforo', 'potasio', 'sodio', 'hierro', 'yodo', 'fluor', 'zinc'];
+    var words = ['calcio', 'f&oacute;sforo', 'potasio', 'sodio', 'hierro', 'yodo', 'fl&uacute;or', 'zinc'];
+    var minerales = [
+        'Fortalece huesos y dientes.',
+        'Te ayuda a la contracción muscular.',
+        'Ayuda para tu crecimiento normal y actividad eléctrica del corazón.',
+        'Control de presión arterial y volumen sanguíneo.',
+        'Permite la formación de glóbulos rojos.',
+        'Apoya el crecimiento y el desarrollo físico y mental.',
+        'Útil para el esmalte de tus dientes.',
+        'Necesario para tu piel, cabello, esqueleto.'
+    ]
     for ( var i=1; i<=8; i++ ) {
-        $('<div>' + words[i-1] + '</div>').data( 'number', i ).appendTo( '#cardSlots' ).droppable( {
+        $('<div><b>' + words[i-1] + '</b> <br/> <p>' + minerales[i - 1] + '</p></div>').data( 'number', i ).appendTo( '#cardSlots' ).droppable( {
             accept: '#cardPile div',
             hoverClass: 'hovered',
             drop: handleCardDrop

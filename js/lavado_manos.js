@@ -44,22 +44,39 @@ function init() {
     console.log(numbers);
 
     for (var i = 0; i < 11; i++) {
-        $('<div><img data-toggle="tooltip" title="' + tooltips[numbers[i] - 1] + '" width="105" height="95" src=\"../img/lavado_manos/' + numbers[i] + '.png\"></div>').data('number', numbers[i]).attr('id', 'card' + numbers[i]).appendTo('#cardPile').draggable({
-            containment: '#content',
-            stack: '#cardPile div',
-            cursor: 'move',
-            revert: true
-        });
+        if ( i == 6) {
+            $('<div style="margin-left: 75px;"><img data-toggle="tooltip" title="' + tooltips[numbers[i] - 1] + '" width="105" height="95" src=\"../img/lavado_manos/' + numbers[i] + '.png\"></div>').data('number', numbers[i]).attr('id', 'card' + numbers[i]).appendTo('#cardPile').draggable({
+                containment: '#content',
+                stack: '#cardPile div',
+                cursor: 'move',
+                revert: true
+            });
+        } else {
+            $('<div><img data-toggle="tooltip" title="' + tooltips[numbers[i] - 1] + '" width="105" height="95" src=\"../img/lavado_manos/' + numbers[i] + '.png\"></div>').data('number', numbers[i]).attr('id', 'card' + numbers[i]).appendTo('#cardPile').draggable({
+                containment: '#content',
+                stack: '#cardPile div',
+                cursor: 'move',
+                revert: true
+            });
+        }
     }
 
     // Create the card slots
     var words = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11'];
     for (var i = 1; i <= 11; i++) {
-        $('<div>' + words[i - 1] + '</div>').data('number', i).appendTo('#cardSlots').droppable({
-            accept: '#cardPile div',
-            hoverClass: 'hovered',
-            drop: handleCardDrop
-        });
+        if ( i == 7) {
+            $('<div style="margin-left: 75px;">' + words[i - 1] + '</div>').data('number', i).appendTo('#cardSlots').droppable({
+                accept: '#cardPile div',
+                hoverClass: 'hovered',
+                drop: handleCardDrop
+            });
+        } else {
+            $('<div>' + words[i - 1] + '</div>').data('number', i).appendTo('#cardSlots').droppable({
+                accept: '#cardPile div',
+                hoverClass: 'hovered',
+                drop: handleCardDrop
+            });
+        }
     }
 
 }

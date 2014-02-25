@@ -18,6 +18,11 @@ body{
 	overflow-x: hidden;
 }
 
+.container {
+    margin-top: 130px !important;
+
+}
+
 a{
 	color: #555;
 	text-decoration: none;

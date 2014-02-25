@@ -36,3 +36,8 @@ Ayuda Joel
 - alinear el dialog al centro
 - Fondo estilo whatsapp con pelotas y juguetes
 
+Observa
+
+position absolute
+top
+left

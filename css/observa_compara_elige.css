@@ -78,6 +78,8 @@ h1 {
 }
 
 #cardSlots1 {
+    position: relative;
+    left: -330px;
     /*float: left;*/
     /*margin-right: auto;*/
     width: 650px;
@@ -93,6 +95,10 @@ h1 {
 }
 
 #cardSlots2 {
+    position: relative;
+    left: 330px;
+    top: -200px;
+
     /*float: right;*/
     /*margin-left: auto;*/
       width: 650px;
