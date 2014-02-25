@@ -30,3 +30,13 @@ h1, h2 {
 h1 {
     margin-bottom: 60px;
 }
+
+p, ol {
+    font-family: 'Averia Sans Libre', cursive;
+    font-size: 20px !important;
+}
+
+ul {
+    font-family: 'Averia Sans Libre', cursive;
+    font-size: 20px !important;
+}

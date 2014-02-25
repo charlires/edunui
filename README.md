@@ -49,3 +49,27 @@ Observa
 position absolute
 top
 left
+
+Pendientes
+==========
+
+Modulo 1
+--------
+- Titulo
+
+Aparato digestivo
+-----------------
+- Titulo
+
+Modulo 3
+--------
+- Titulo mas chico
+
+Recetas
+-------
+- Binietas
+- Text en minusculas
+
+
+
+
